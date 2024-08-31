@@ -1,0 +1,276 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.Model", "OAK.Model\OAK.Model.csproj", "{07C6099C-16F0-4702-AC45-396F5A2F8CFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.ModelConfiguration", "OAK.ModelConfiguration\OAK.ModelConfiguration.csproj", "{9BB4040D-FF04-4AEC-9B1D-18473EAABE56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.ServiceContracts", "OAK.ServiceContracts\OAK.ServiceContracts.csproj", "{2BF46EEC-5930-4284-89F3-A86DE1D97956}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.Services", "OAK.Services\OAK.Services.csproj", "{72868570-D6CE-4FBA-A536-3B4918C23981}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.Data", "OAK.Data\OAK.Data.csproj", "{BD22230C-2BC7-41F2-94FA-808022F56A44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.DataBase", "OAK.DataBase\OAK.DataBase.csproj", "{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.WebApi", "OAK.WebApi\OAK.WebApi.csproj", "{CD094A7D-69B9-4164-92EB-A5745F5C44E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD} = {07C6099C-16F0-4702-AC45-396F5A2F8CFD}
+		{1892A120-B47E-49FE-BF92-E0BEA4285AFF} = {1892A120-B47E-49FE-BF92-E0BEA4285AFF}
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956} = {2BF46EEC-5930-4284-89F3-A86DE1D97956}
+		{4147E5B1-B44B-4FBB-A232-BB32562B5CF3} = {4147E5B1-B44B-4FBB-A232-BB32562B5CF3}
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835} = {8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}
+		{9BB4040D-FF04-4AEC-9B1D-18473EAABE56} = {9BB4040D-FF04-4AEC-9B1D-18473EAABE56}
+		{AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F} = {AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F}
+		{BD22230C-2BC7-41F2-94FA-808022F56A44} = {BD22230C-2BC7-41F2-94FA-808022F56A44}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{12D57F54-5835-4852-83E1-A50E45565F09}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Email_ReadMe.txt = Email_ReadMe.txt
+		Localizastion.txt = Localizastion.txt
+		RepostoryReadMe.txt = RepostoryReadMe.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.Validation", "OAK.Validation\OAK.Validation.csproj", "{1892A120-B47E-49FE-BF92-E0BEA4285AFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.Logging", "OAK.Logging\OAK.Logging.csproj", "{AD3C66D8-87DC-496B-9455-412783DE01DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalProjects", "ExternalProjects", "{204EC0DB-0B20-4B9A-B9A5-17915B0E6E22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Localization.SqlLocalizer", "AspNetCoreLocalization-master\src\Localization.SqlLocalizer\Localization.SqlLocalizer.csproj", "{AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.Localizer", "OAK.Localizer\OAK.Localizer.csproj", "{999F3BC2-1FDC-4F50-90A7-05B856A5227F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PopertyFiles", "PopertyFiles", "{D40AFB9D-83DE-4A34-98B4-C0005261A8BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{BC8D3066-9F73-417D-8C85-869250D5E54D}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\A-Priv. Umzugsliste.xlsx = Documents\A-Priv. Umzugsliste.xlsx
+		Documents\Estate.xlsx = Documents\Estate.xlsx
+		C:\Users\leventgenc\Downloads\Fahrt-kost-rech mit personaleinsatz.xls = C:\Users\leventgenc\Downloads\Fahrt-kost-rech mit personaleinsatz.xls
+		C:\Users\leventgenc\Downloads\Preisliste- Gewerblich.xls = C:\Users\leventgenc\Downloads\Preisliste- Gewerblich.xls
+		C:\Users\leventgenc\Downloads\Umzugsliste Firma.xls = C:\Users\leventgenc\Downloads\Umzugsliste Firma.xls
+		Documents\Volum und info.xlsx = Documents\Volum und info.xlsx
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.EstateServices", "OAK.EstateServices\OAK.EstateServices.csproj", "{5CAC3AEF-D28C-468E-BE47-4178AF66417D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD} = {07C6099C-16F0-4702-AC45-396F5A2F8CFD}
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956} = {2BF46EEC-5930-4284-89F3-A86DE1D97956}
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835} = {8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}
+		{BD22230C-2BC7-41F2-94FA-808022F56A44} = {BD22230C-2BC7-41F2-94FA-808022F56A44}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.DemandServices", "OAK.DemandServices\OAK.DemandServices.csproj", "{B3FE71E0-1F15-472C-B6A5-216BBC336B29}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD} = {07C6099C-16F0-4702-AC45-396F5A2F8CFD}
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956} = {2BF46EEC-5930-4284-89F3-A86DE1D97956}
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835} = {8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}
+		{BD22230C-2BC7-41F2-94FA-808022F56A44} = {BD22230C-2BC7-41F2-94FA-808022F56A44}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.DocumentServices", "OAK.DocumentServices\OAK.DocumentServices.csproj", "{A017BD66-8039-4ABD-99E1-08F29ECDB546}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.CommentServices", "OAK.CommentServices\OAK.CommentServices.csproj", "{47C8AD2D-AF6C-4281-ABDF-C3BC148BEA0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessServices", "BusinessServices", "{FBEE2C1E-A701-4515-89B3-ABDBC030974B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.CompanyServices", "OAK.CompanyServices\OAK.CompanyServices.csproj", "{1BA440C6-26EB-40C8-868E-B3E3BF67AE34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.InitializationService", "OAK.InitializationService\OAK.InitializationService.csproj", "{896E71C7-2C27-4E39-BA75-BA0D0F9F4E52}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72868570-D6CE-4FBA-A536-3B4918C23981} = {72868570-D6CE-4FBA-A536-3B4918C23981}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.GenericAddressService", "OAK.GenericAddressService\OAK.GenericAddressService.csproj", "{C8F2384D-55C7-4D45-9294-3857F882637A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD} = {07C6099C-16F0-4702-AC45-396F5A2F8CFD}
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956} = {2BF46EEC-5930-4284-89F3-A86DE1D97956}
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835} = {8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}
+		{999F3BC2-1FDC-4F50-90A7-05B856A5227F} = {999F3BC2-1FDC-4F50-90A7-05B856A5227F}
+		{BD22230C-2BC7-41F2-94FA-808022F56A44} = {BD22230C-2BC7-41F2-94FA-808022F56A44}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{2A961FA9-8131-4F81-9006-86928A53DB96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "geodata", "geodata", "{135F3905-4258-4420-82A0-52FFAAA6C7A7}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\assets\geodata\Features.geojson = Documents\assets\geodata\Features.geojson
+		Documents\assets\geodata\OsmFile_lines.geojson = Documents\assets\geodata\OsmFile_lines.geojson
+		Documents\assets\geodata\OsmFile_multilinestrings.geojson = Documents\assets\geodata\OsmFile_multilinestrings.geojson
+		Documents\assets\geodata\OsmFile_multipolygons.geojson = Documents\assets\geodata\OsmFile_multipolygons.geojson
+		Documents\assets\geodata\OsmFile_points.geojson = Documents\assets\geodata\OsmFile_points.geojson
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "htmlFiles", "htmlFiles", "{8A2279CA-3165-4EE5-B145-14F1A3C52642}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\assets\htmlFiles\AccountValidation_de-DE.html = Documents\assets\htmlFiles\AccountValidation_de-DE.html
+		Documents\assets\htmlFiles\AccountValidation_en-US.html = Documents\assets\htmlFiles\AccountValidation_en-US.html
+		Documents\assets\htmlFiles\AccountValidation_es-ES.html = Documents\assets\htmlFiles\AccountValidation_es-ES.html
+		Documents\assets\htmlFiles\AccountValidation_fr-FR.html = Documents\assets\htmlFiles\AccountValidation_fr-FR.html
+		Documents\assets\htmlFiles\AccountValidation_ru-RU.html = Documents\assets\htmlFiles\AccountValidation_ru-RU.html
+		Documents\assets\htmlFiles\AccountValidation_tr-TR.html = Documents\assets\htmlFiles\AccountValidation_tr-TR.html
+		Documents\assets\htmlFiles\EmailConfirmation_de-DE.html = Documents\assets\htmlFiles\EmailConfirmation_de-DE.html
+		Documents\assets\htmlFiles\EmailConfirmation_en-US.html = Documents\assets\htmlFiles\EmailConfirmation_en-US.html
+		Documents\assets\htmlFiles\EmailConfirmation_es-ES.html = Documents\assets\htmlFiles\EmailConfirmation_es-ES.html
+		Documents\assets\htmlFiles\EmailConfirmation_fr-FR.html = Documents\assets\htmlFiles\EmailConfirmation_fr-FR.html
+		Documents\assets\htmlFiles\EmailConfirmation_ru-RU.html = Documents\assets\htmlFiles\EmailConfirmation_ru-RU.html
+		Documents\assets\htmlFiles\EmailConfirmation_tr-TR.html = Documents\assets\htmlFiles\EmailConfirmation_tr-TR.html
+		Documents\assets\htmlFiles\ForgotPassword_de-DE.html = Documents\assets\htmlFiles\ForgotPassword_de-DE.html
+		Documents\assets\htmlFiles\ForgotPassword_en-US.html = Documents\assets\htmlFiles\ForgotPassword_en-US.html
+		Documents\assets\htmlFiles\ForgotPassword_es-ES.html = Documents\assets\htmlFiles\ForgotPassword_es-ES.html
+		Documents\assets\htmlFiles\ForgotPassword_fr-FR.html = Documents\assets\htmlFiles\ForgotPassword_fr-FR.html
+		Documents\assets\htmlFiles\ForgotPassword_ru-RU.html = Documents\assets\htmlFiles\ForgotPassword_ru-RU.html
+		Documents\assets\htmlFiles\ForgotPassword_tr-TR.html = Documents\assets\htmlFiles\ForgotPassword_tr-TR.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jsonFiles", "jsonFiles", "{1B14C243-8B63-4266-8C1E-E5B2603B2F0E}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\assets\jsonFiles\Report_de-DE.json = Documents\assets\jsonFiles\Report_de-DE.json
+		Documents\assets\jsonFiles\Report_en-US.json = Documents\assets\jsonFiles\Report_en-US.json
+		Documents\assets\jsonFiles\Report_es-ES.json = Documents\assets\jsonFiles\Report_es-ES.json
+		Documents\assets\jsonFiles\Report_fr-FR.json = Documents\assets\jsonFiles\Report_fr-FR.json
+		Documents\assets\jsonFiles\Report_ru-RU.json = Documents\assets\jsonFiles\Report_ru-RU.json
+		Documents\assets\jsonFiles\Report_tr-TR.json = Documents\assets\jsonFiles\Report_tr-TR.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.WebReport", "OAK.WebReport\OAK.WebReport.csproj", "{690C208E-97BD-4BC6-BB0F-FB9F3E844D27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{193EE844-69D6-49B8-9F18-292FB0B103EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{4DFECF68-B30D-4F22-98AA-C9934AC7ACBA}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\Database\Views\DemandView.sql = Documents\Database\Views\DemandView.sql
+		Documents\Database\Views\EstateDetailView.sql = Documents\Database\Views\EstateDetailView.sql
+		Documents\Database\Views\LocalizationView.sql = Documents\Database\Views\LocalizationView.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyfiles", "Keyfiles", "{0E1FE6FB-E06E-4D7C-A758-0FB3949E7285}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Levent\Downloads\umzug-e3a96-0d8bf4781898.json = C:\Users\Levent\Downloads\umzug-e3a96-0d8bf4781898.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD6755EC-4BAC-4394-BE52-EF21D2708F90}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAK.TransportationService", "OAK.TransportationService\OAK.TransportationService.csproj", "{4147E5B1-B44B-4FBB-A232-BB32562B5CF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C6099C-16F0-4702-AC45-396F5A2F8CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB4040D-FF04-4AEC-9B1D-18473EAABE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB4040D-FF04-4AEC-9B1D-18473EAABE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB4040D-FF04-4AEC-9B1D-18473EAABE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB4040D-FF04-4AEC-9B1D-18473EAABE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF46EEC-5930-4284-89F3-A86DE1D97956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72868570-D6CE-4FBA-A536-3B4918C23981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72868570-D6CE-4FBA-A536-3B4918C23981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72868570-D6CE-4FBA-A536-3B4918C23981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72868570-D6CE-4FBA-A536-3B4918C23981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD22230C-2BC7-41F2-94FA-808022F56A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD22230C-2BC7-41F2-94FA-808022F56A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD22230C-2BC7-41F2-94FA-808022F56A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD22230C-2BC7-41F2-94FA-808022F56A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC34E5F-E390-45F7-B8F7-DBBD2B5D2835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD094A7D-69B9-4164-92EB-A5745F5C44E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD094A7D-69B9-4164-92EB-A5745F5C44E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD094A7D-69B9-4164-92EB-A5745F5C44E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD094A7D-69B9-4164-92EB-A5745F5C44E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD094A7D-69B9-4164-92EB-A5745F5C44E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1892A120-B47E-49FE-BF92-E0BEA4285AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1892A120-B47E-49FE-BF92-E0BEA4285AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1892A120-B47E-49FE-BF92-E0BEA4285AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1892A120-B47E-49FE-BF92-E0BEA4285AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3C66D8-87DC-496B-9455-412783DE01DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3C66D8-87DC-496B-9455-412783DE01DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3C66D8-87DC-496B-9455-412783DE01DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3C66D8-87DC-496B-9455-412783DE01DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999F3BC2-1FDC-4F50-90A7-05B856A5227F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999F3BC2-1FDC-4F50-90A7-05B856A5227F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999F3BC2-1FDC-4F50-90A7-05B856A5227F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999F3BC2-1FDC-4F50-90A7-05B856A5227F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAC3AEF-D28C-468E-BE47-4178AF66417D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAC3AEF-D28C-468E-BE47-4178AF66417D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAC3AEF-D28C-468E-BE47-4178AF66417D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAC3AEF-D28C-468E-BE47-4178AF66417D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FE71E0-1F15-472C-B6A5-216BBC336B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FE71E0-1F15-472C-B6A5-216BBC336B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FE71E0-1F15-472C-B6A5-216BBC336B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FE71E0-1F15-472C-B6A5-216BBC336B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A017BD66-8039-4ABD-99E1-08F29ECDB546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A017BD66-8039-4ABD-99E1-08F29ECDB546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A017BD66-8039-4ABD-99E1-08F29ECDB546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A017BD66-8039-4ABD-99E1-08F29ECDB546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C8AD2D-AF6C-4281-ABDF-C3BC148BEA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C8AD2D-AF6C-4281-ABDF-C3BC148BEA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C8AD2D-AF6C-4281-ABDF-C3BC148BEA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C8AD2D-AF6C-4281-ABDF-C3BC148BEA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA440C6-26EB-40C8-868E-B3E3BF67AE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA440C6-26EB-40C8-868E-B3E3BF67AE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA440C6-26EB-40C8-868E-B3E3BF67AE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA440C6-26EB-40C8-868E-B3E3BF67AE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896E71C7-2C27-4E39-BA75-BA0D0F9F4E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896E71C7-2C27-4E39-BA75-BA0D0F9F4E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896E71C7-2C27-4E39-BA75-BA0D0F9F4E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896E71C7-2C27-4E39-BA75-BA0D0F9F4E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F2384D-55C7-4D45-9294-3857F882637A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F2384D-55C7-4D45-9294-3857F882637A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F2384D-55C7-4D45-9294-3857F882637A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F2384D-55C7-4D45-9294-3857F882637A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690C208E-97BD-4BC6-BB0F-FB9F3E844D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690C208E-97BD-4BC6-BB0F-FB9F3E844D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690C208E-97BD-4BC6-BB0F-FB9F3E844D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690C208E-97BD-4BC6-BB0F-FB9F3E844D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4147E5B1-B44B-4FBB-A232-BB32562B5CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4147E5B1-B44B-4FBB-A232-BB32562B5CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4147E5B1-B44B-4FBB-A232-BB32562B5CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4147E5B1-B44B-4FBB-A232-BB32562B5CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE13CCBA-1CCF-4940-A0FC-F5FC5B46483F} = {204EC0DB-0B20-4B9A-B9A5-17915B0E6E22}
+		{5CAC3AEF-D28C-468E-BE47-4178AF66417D} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+		{B3FE71E0-1F15-472C-B6A5-216BBC336B29} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+		{A017BD66-8039-4ABD-99E1-08F29ECDB546} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+		{47C8AD2D-AF6C-4281-ABDF-C3BC148BEA0C} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+		{1BA440C6-26EB-40C8-868E-B3E3BF67AE34} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+		{896E71C7-2C27-4E39-BA75-BA0D0F9F4E52} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+		{C8F2384D-55C7-4D45-9294-3857F882637A} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+		{2A961FA9-8131-4F81-9006-86928A53DB96} = {BC8D3066-9F73-417D-8C85-869250D5E54D}
+		{135F3905-4258-4420-82A0-52FFAAA6C7A7} = {2A961FA9-8131-4F81-9006-86928A53DB96}
+		{8A2279CA-3165-4EE5-B145-14F1A3C52642} = {2A961FA9-8131-4F81-9006-86928A53DB96}
+		{1B14C243-8B63-4266-8C1E-E5B2603B2F0E} = {2A961FA9-8131-4F81-9006-86928A53DB96}
+		{193EE844-69D6-49B8-9F18-292FB0B103EC} = {BC8D3066-9F73-417D-8C85-869250D5E54D}
+		{4DFECF68-B30D-4F22-98AA-C9934AC7ACBA} = {193EE844-69D6-49B8-9F18-292FB0B103EC}
+		{0E1FE6FB-E06E-4D7C-A758-0FB3949E7285} = {BC8D3066-9F73-417D-8C85-869250D5E54D}
+		{4147E5B1-B44B-4FBB-A232-BB32562B5CF3} = {FBEE2C1E-A701-4515-89B3-ABDBC030974B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A931733-708E-4FDC-A3EA-83658392AF6C}
+	EndGlobalSection
+EndGlobal

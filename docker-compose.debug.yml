@@ -1,0 +1,19 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  oakwebreport:
+    image: oakwebreport
+    build:
+      context: .
+      dockerfile: OAK/OAK.WebReport/Dockerfile
+      args:
+        - configuration=Debug
+    ports:
+      - 4301:4301
+      - 5001:5001
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw

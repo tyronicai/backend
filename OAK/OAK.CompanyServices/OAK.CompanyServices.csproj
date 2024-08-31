@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OAK.DataBase\OAK.DataBase.csproj" />
+    <ProjectReference Include="..\OAK.Data\OAK.Data.csproj" />
+    <ProjectReference Include="..\OAK.ServiceContracts\OAK.ServiceContracts.csproj" />
+    <ProjectReference Include="..\OAK.Services\OAK.Services.csproj" />
+  </ItemGroup>
+
+</Project>

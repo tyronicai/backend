@@ -1,0 +1,370 @@
+﻿@using OAK.Model.BusinessModels.EstateModels
+@using OAK.Model.Core
+@using OAK.Model.BusinessModels.DemandModels
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    var furnitures = (List<EstateDetailView>) ViewData["Furnitures"];
+    int index = 0;
+    var currentYear = DateTime.Now.Year.ToString();
+    var account = (Account) ViewData["Account"];
+    var demand = (DemandView) ViewData["Demand"];
+    var fromAddress = (string) ViewData["FromAddress"];
+    var toAddress = (string) ViewData["ToAddress"];
+    var cultureName = (string) ViewData["Language"];
+}
+
+<header class="clearfix">
+    <div id="logo">
+        <img src="~/assets/logo.png">
+    </div>
+    <h1>MEINUMZUG24.EU</h1>
+    <div id="company" class="clearfix">
+        <div>Meinumzug24</div>
+        <div>ADDRESS<br/> 45127, DE</div>
+        <div>(111) 111-11 11</div>
+        <div>
+            <a href="mailto:info@meinumzug24.eu">info@meinumzug24.eu</a>
+        </div>
+    </div>
+    <div id="project">
+        <div>
+            @if (cultureName == "en")
+            {
+                <span>TYPE</span> @demand.DemandTypeName 
+            }
+            else
+            {
+                <span>ART</span> @demand.DemandTypeName
+            }
+        </div>
+        <div>
+            @if (cultureName == "en")
+            {
+                <span>CLIENT</span> @account.FirstName @account.LastName
+            }
+            else
+            {
+                <span>KLIENT</span> @account.FirstName @account.LastName                
+            }
+        </div>
+        <div>
+            @if (cultureName == "en")
+            {
+                <span>F. ADRESSE</span> @fromAddress
+            }
+            else
+            {
+                <span>V. ADDRESS</span> @fromAddress
+            }
+        </div>
+        <div>
+            @if (cultureName == "en")
+            {
+                <span>T. ADDRESS</span> @toAddress
+            }
+            else
+            {
+                <span>ADRESSE</span> @toAddress
+            }
+        </div>
+        <div>
+            @if (cultureName == "en")
+            {
+                <span>EMAIL</span> <a>@account.Email</a>
+            }
+            else
+            {
+                <span>EMAIL</span> <a>@account.Email</a>
+            }
+        </div>
+        <div>
+            @if (cultureName == "en")
+            {
+                <span>INITIAL DATE</span> @demand.InitialTransportationDate.ToString().Split(' ')[0]
+            }
+            else
+            {
+                <span style="display: inline-table">ANFANGSDATUM</span> @demand.InitialTransportationDate.ToString().Split(' ')[0]
+            }
+        </div>
+        <div>
+            @if (cultureName == "en")
+            {
+                <span>FINAL DATE</span> @demand.FinalTransportationDate.Value.ToString().Split(' ')[0]
+            }
+            else
+            {
+                <span style="display: inline-table">LETZTER TERMIN</span> @demand.FinalTransportationDate.Value.ToString().Split(' ')[0]
+            }
+        </div>
+    </div>
+    <hr style="margin-top: 160px"/>
+    <div style="background: #F5F5F5">
+        @if (cultureName == "en")
+        {
+            <span>FLOORS</span>
+        }
+        else
+        {
+            <span>BÖDEN</span>
+        }
+        <div style="float: right">
+            @furnitures.First().NumberOfFloors
+        </div>
+    </div>
+    <div>
+        @if (cultureName == "en")
+        {
+            <span>ROOMS</span>
+        }
+        else
+        {
+            <span>RÄUME</span>
+        }
+        <div style="float: right">
+            @furnitures.First().NumberOfRooms
+        </div>
+    </div>
+    <div style="background: #F5F5F5;">
+        @if (cultureName == "en")
+        {
+            <span>T. SQUARE</span>
+        }
+        else
+        {
+            <span>GESAMTQUADRAT</span>
+        }
+        <div style="float: right">
+            @furnitures.First().TotalSquareMeter
+        </div>
+    </div>
+    <div>
+        @if (cultureName == "en")
+        {
+            <span>ELEVATOR</span>
+
+        }
+        else
+        {
+            <span>AUFZUG</span>
+
+        }
+        @if (@furnitures.First().ElevatorAvailability == 1)
+        {
+            <span style="float: right; color: #39ef39">
+                <span>&#10003;</span>
+            </span>
+        }
+        else
+        {
+            <span class="unit" style="float: right; color:  #ff4d4d">
+                <span>&#10005;</span>
+            </span>
+        }
+
+    </div>
+<div style="background: #F5F5F5;">
+    @if (cultureName == "en")
+    {
+        <span>FURNITURE MONTAGE</span>
+    }
+    else
+    {
+        <span>MÖBELMONTAGE</span>
+    }
+    @if (@furnitures.First().FurnitureMontage)
+    {
+        <span style="float: right; color: #39ef39">
+            <span>&#10003;</span>
+        </span>
+    }
+    else
+    {
+        <span class="unit" style="float: right; color:  #ff4d4d">
+            <span>&#10005;</span>
+        </span>
+    }
+</div>
+<div>
+    @if (cultureName == "en")
+    {
+        <span>KITCHEN MONTAGE</span>
+    }
+    else
+    {
+        <span>KÜCHENMONTAGE</span>
+    }
+    @if (@furnitures.First().KitchenMontage)
+    {
+        <span style="float: right; color: #39ef39">
+            <span>&#10003;</span>
+        </span>
+    }
+    else
+    {
+        <span class="unit" style="float: right; color:  #ff4d4d">
+            <span>&#10005;</span>
+        </span>
+    }
+
+</div>
+<div style="background: #F5F5F5;">
+    @if (cultureName == "en")
+    {
+    <span>PACKING SERVICE</span>
+    }
+    else
+    {
+    <span>VERPACKUNGSSERVICE</span>
+    }
+    @if (@furnitures.First().PackingService)
+    {
+        <span style="float: right; color: #39ef39">
+            <span>&#10003;</span>
+        </span>
+    }
+    else
+    {
+        <span class="unit" style="float: right; color:  #ff4d4d">
+            <span>&#10005;</span>
+        </span>
+    }
+</div>
+<div>
+    @if (cultureName == "en")
+    {
+        <span>LOFT</span>
+    }
+    else
+    {
+        <span>DACHGESCHOSS</span>
+    }
+    @if (@furnitures.First().HasLoft)
+    {
+        <span style="float: right; color: #39ef39">
+            <span>&#10003;</span>
+        </span>
+    }
+    else
+    {
+        <span class="unit" style="float: right; color:  #ff4d4d">
+            <span>&#10005;</span>
+        </span>
+    }
+
+</div>
+    @if (@furnitures.First().HasLoft)
+    {
+        <div style="background: #F5F5F5;">
+            <span>LOFT SQUARE</span>
+            <div style="float: right">
+                @furnitures.First().LoftSqMt
+            </div>
+        </div>
+    }
+    <div>
+        <span>CELLAR</span>
+        @if (@furnitures.First().HasCellar)
+        {
+            <span style="float: right; color: #39ef39">
+                <span>&#10003;</span>
+            </span>
+        }
+        else
+        {
+            <span class="unit" style="float: right; color:  #ff4d4d">
+                <span>&#10005;</span>
+            </span>
+        }
+
+    </div>
+    @if (@furnitures.First().HasCellar)
+    {
+        <div style="background: #F5F5F5;">
+            @if (cultureName == "en")
+            {
+                <span>CELLAR SQUARE</span>
+            }
+            else
+            {
+                <span>KELLERQUADRAT</span>
+            }
+            <div style="float: right">
+                @furnitures.First().CellarSqMt
+            </div>
+        </div>
+        <div>
+            <span>CELLAR FLOOR</span>
+            <div style="float: right">
+                @furnitures.First().CellarFloor
+            </div>
+        </div>
+    }
+</header>
+<main>
+    <table>
+        <thead>
+        <tr>
+            @if (cultureName == "en")
+            {
+                <th class="service">INDEX</th>
+                <th class="desc">FURNITURE NAME</th>
+                <th>ASSEMBLE</th>
+                <th>QUANTITY</th>
+                <th>ESTATE FLAT NAME</th>
+            }
+            else
+            {
+                <th class="service">INDEX</th>
+                <th class="desc">MÖBELNAME</th>
+                <th>MONTIEREN</th>
+                <th>MENGE</th>
+                <th>ESTATE FLAT NAME</th>
+            }
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var c in @furnitures)
+        {
+            ++index;
+            <tr>
+                <td class="service">@index</td>
+                <td class="desc">@c.FurnitureName</td>
+                @if (@c.DoAssemble)
+                {
+                    <td class="unit" style="text-align: center; color: #39ef39">
+                        <span>&#10003;</span>
+                    </td>
+                }
+                else
+                {
+                    <td class="unit" style="text-align: center; color:  #ff4d4d">
+                        <span>&#10005;</span>
+                    </td>
+                }
+                <td class="service" style="text-align: center">@c.NumberOfFurnitures</td>
+                <td class="desc" style="text-align: center">@c.EstateFlatName</td>
+            </tr>
+        }
+        <tr>
+            <td colspan="4" class="grand total">GESAMTMÖBELZAHL</td>
+            <td class="grand total">@index</td>
+        </tr>
+        </tbody>
+    </table>
+    <div id="notices">
+        @if (cultureName == "en")
+        {
+            <div class="notice" style="text-align: center">This report was created automatically. If you think there is a mistake, you can contact us.</div>
+        }
+        else
+        {
+            <div class="notice" style="text-align: center">Dieser Bericht wurde automatisch erstellt. Wenn Sie glauben, dass ein Fehler vorliegt, können Sie uns kontaktieren.</div>
+        }
+        <div class="notice" style="text-align: center">support@meinumzug24.eu</div>
+        <div style="text-align: center; font-size: 0.8em;">MEINUMZUG24.EU © @currentYear</div>
+    </div>
+</main>

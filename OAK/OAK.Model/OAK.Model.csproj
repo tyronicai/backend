@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApiModels\EstateModels\**" />
+    <Compile Remove="ApiModels\TransportationModels\**" />
+    <Compile Remove="BusinessModels\DemandModels - Copy\**" />
+    <EmbeddedResource Remove="ApiModels\EstateModels\**" />
+    <EmbeddedResource Remove="ApiModels\TransportationModels\**" />
+    <EmbeddedResource Remove="BusinessModels\DemandModels - Copy\**" />
+    <None Remove="ApiModels\EstateModels\**" />
+    <None Remove="ApiModels\TransportationModels\**" />
+    <None Remove="BusinessModels\DemandModels - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApiModels\RequestMdl\CommentStatusTypeReqMdl - Copy.cs" />
+    <Compile Remove="ApiModels\ResultMdl\CommentStatusTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\CommentStatusTypeResMdl - Copy.cs" />
+    <Compile Remove="ApiModels\ResultMdl\CommentTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\CreateTransportationDemandReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\DemandStatusTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\DemandTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\DocumentTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\EPartTypeFrnTypeMatrixAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\EstateMetaDataResMdl - Copy.cs" />
+    <Compile Remove="ApiModels\ResultMdl\EstatePartFurnitureAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\EstatePartTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\EstateTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\EstateTypeEPartTypeMatrixAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\FurnitureTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\TransportationStatusTypeAddReqMdl.cs" />
+    <Compile Remove="ApiModels\ResultMdl\TransportationTypeAddReqMdl.cs" />
+    <Compile Remove="BusinessModels\Customer.cs" />
+    <Compile Remove="BusinessModels\DemandModels\DemandIssue.cs" />
+    <Compile Remove="BusinessModels\DemandModels\DemandOwner - Copy.cs" />
+    <Compile Remove="BusinessModels\DemandModels\ServiceType.cs" />
+    <Compile Remove="BusinessModels\DocumentModels\DocumentProperty.cs" />
+    <Compile Remove="BusinessModels\DocumentModels\DocumentTypePropertyMap.cs" />
+    <Compile Remove="BusinessModels\EstateModels\EstatePartProperty.cs" />
+    <Compile Remove="BusinessModels\EstateModels\EstatePartTypePropertyMap.cs" />
+    <Compile Remove="BusinessModels\EstateModels\EstateProperty.cs" />
+    <Compile Remove="BusinessModels\EstateModels\EstateTypePropertyMap.cs" />
+    <Compile Remove="BusinessModels\EstateModels\FurnitureProperty.cs" />
+    <Compile Remove="BusinessModels\EstateModels\FurnitureTypePropertyMap.cs" />
+    <Compile Remove="BusinessModels\EstateProperty.cs" />
+    <Compile Remove="BusinessModels\EstateTypePropertyMap.cs" />
+    <Compile Remove="BusinessModels\TransportationModels\TransportationAddress.cs" />
+    <Compile Remove="ViewModels\CoreModels\GenericAddress.cs" />
+    <Compile Remove="ViewModels\CoreModels\UeGenericAddress.cs" />
+    <Compile Remove="ViewModels\DemandModels\UeDemandType - Copy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.7" />
+    <PackageReference Include="Npgsql" Version="8.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.3" />
+  </ItemGroup>
+
+</Project>

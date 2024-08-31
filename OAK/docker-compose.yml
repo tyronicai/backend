@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  webapi:
+    build:
+      context: ..
+      dockerfile: OAK/OAK.WebApi/Dockerfile
+    ports:
+      - "5000:80"
+
+  webreport:
+    build:
+      context: ..
+      dockerfile: OAK/OAK.WebReport/Dockerfile
+    ports:
+      - "5001:80"
